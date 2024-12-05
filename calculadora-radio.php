@@ -8,6 +8,9 @@
 
 <body>
 
+<?php
+   
+   
     <h1>Calculadora Simple</h1>
 
     <form method="post">
@@ -26,7 +29,6 @@
         <input type="submit" value="Calcular">
     </form>
 
-    <?php
     if ($_SERVER["REQUEST_METHOD"] == "POST") {
         $operando1 = $_POST["operando1"];
         $operando2 = $_POST["operando2"];
@@ -47,6 +49,7 @@
         echo "<h2>Resultado: $resultado</h2>";
     }
     ?>
+
 
 </body>
 
